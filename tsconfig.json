@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "allowUnreachableCode": true,
+        "lib": [
+            "ESNext",
+        ],
+        "target": "ESNext"
+    }
+}
