@@ -1,10 +1,6 @@
 {
     "compilerOptions": {
         "allowUnreachableCode": true,
-        "lib": [
-            "ESNext",
-            "DOM"
-        ],
         "target": "ESNext"
     }
 }
