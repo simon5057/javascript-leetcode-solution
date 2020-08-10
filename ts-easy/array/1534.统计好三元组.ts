@@ -1,16 +1,16 @@
 /*
- * @lc app=leetcode.cn id=5475 lang=typescript
+ * @lc app=leetcode.cn id=1534 lang=typescript
  *
- * [5475] 统计好三元组
+ * [1534] 统计好三元组
  *
  * https://leetcode-cn.com/problems/count-good-triplets/description/
  *
  * algorithms
- * Easy (78.71%)
+ * Easy (78.18%)
  * Likes:    0
  * Dislikes: 0
- * Total Accepted:    5.4K
- * Total Submissions: 6.8K
+ * Total Accepted:    6K
+ * Total Submissions: 7.6K
  * Testcase Example:  '[3,0,1,1,9,7]\n7\n2\n3'
  *
  * 给你一个整数数组 arr ，以及 a、b 、c 三个整数。请你统计其中好三元组的数量。
