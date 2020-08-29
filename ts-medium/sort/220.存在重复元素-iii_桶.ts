@@ -39,14 +39,21 @@
 
 // @lc code=start
 function containsNearbyAlmostDuplicate(nums: number[], k: number, t: number): boolean {
+    if (t < 0) return false;
+    const map = new Map();
+    let w = t + 1;
     for (let i = 0; i < nums.length; i++) {
-        let j = 1;
-        while (j <= k && j < nums.length) {
-            if (Math.abs(nums[i] - nums[i + j]) <= t) return true;
-            j++;
-        }
+        let key = getKey(nums[i], w);
+        if (map.has(key)) return true;
+        if (map.has(key - 1) && Math.abs(nums[i] - map.get(key - 1)) < w) return true;
+        if (map.has(key + 1) && Math.abs(nums[i] - map.get(key + 1)) < w) return true;
+        map.set(key, nums[i])
+        if (i >= k) map.delete(getKey(nums[i - k], w));
     }
     return false;
 };
+function getKey(x: number, w: number): number {
+    return Math.floor(x / w);
+}
 // @lc code=end
 
