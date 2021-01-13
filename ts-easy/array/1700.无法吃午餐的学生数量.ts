@@ -1,7 +1,7 @@
 /*
- * @lc app=leetcode.cn id=5621 lang=typescript
+ * @lc app=leetcode.cn id=1700 lang=typescript
  *
- * [5621] 无法吃午餐的学生数量
+ * [1700] 无法吃午餐的学生数量
  *
  * https://leetcode-cn.com/problems/number-of-students-unable-to-eat-lunch/description/
  *
